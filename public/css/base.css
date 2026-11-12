@@ -1,0 +1,23 @@
+:root {
+  --bg: #ffffff;
+  --ink: #15161c;
+  --muted: #6b6f7b;
+  --line: #e6e7ec;
+  --accent: #ff3b4e;        /* coral: color de marca */
+  --accent-dark: #e02438;
+  --accent-soft: #fff0f1;
+  --radius: 14px;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-head: 'Sora', 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}

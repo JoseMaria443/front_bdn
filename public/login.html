@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · BDN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <main class="login">
+    <!-- Izquierda: imagen temporal -->
+    <section class="login__visual" aria-hidden="true">
+      <img src="/img/referencia.png" alt="">
+    </section>
+
+    <!-- Derecha: formulario -->
+    <section class="login__panel">
+      <form class="card" id="login-form" novalidate>
+        <h1 class="card__title">Inicio de sesión</h1>
+        <p class="card__sub">Ingresa tus datos para continuar.</p>
+
+        <div class="field">
+          <label for="identificador">Nombre, correo o teléfono</label>
+          <input id="identificador" name="identificador" type="text" autocomplete="username" required>
+        </div>
+
+        <div class="field">
+          <label for="contrasena">Contraseña</label>
+          <div class="field__pass">
+            <input id="contrasena" name="contrasena" type="password" autocomplete="current-password" required>
+            <button type="button" class="field__toggle" id="toggle-pass" aria-label="Mostrar contraseña">Mostrar</button>
+          </div>
+        </div>
+
+        <p class="form-error" id="form-error" role="alert" aria-live="polite" hidden></p>
+
+        <button class="btn" type="submit" id="submit-btn">Iniciar sesión</button>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>
